@@ -52,7 +52,7 @@
      and resulting lfsr (lfsr) values are defined as follows:
 
      output_bit =
-       ((lfsr >> (k - A)) ^ (lfsr >> (k - B)) ^ (lfsr >> (k - C)) ^ (lfsr >> (k - D)) ^ ... (lfsr >> (k - Z)) & 1u
+       ((lfsr >> (k - A)) ^ (lfsr >> (k - B)) ^ (lfsr >> (k - C)) ^ (lfsr >> (k - D)) ^ ... ^ (lfsr >> (k - Z)) & 1u
 
      lfsr = (lfsr >> 1) | (bit << (k - 1));
      return lfsr;
